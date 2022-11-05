@@ -1,0 +1,128 @@
+""+1+0
+'10'
+""-1+0
+-1
+true+false
+1
+6/"3"
+2
+"2"*"3"
+6
+4+5+"px"
+'9px'
+"$"+4+5
+'$45'
+"4"-2
+2
+"4px"-2
+NaN
+" -9 "+5
+' -9 5'
+" -9 "-5
+-14
+null+1
+1
+undefined+1
+NaN
+" \t \n"-2
+-2
+5>4
+true
+"ананас">"яблоко"
+false
+"2">"12"
+true
+undefined==null
+true
+undefined==null
+true
+null=="\n0\n"
+false
+null===+"\n0\n"
+false
+function checkSpam(str) {
+    let strToLower = str.toLowerCase();
+    if (strToLower.includes('viagra') || 
+        strToLower.includes('xxx'))
+        {
+            return true;
+        }
+    return false;
+}
+checkSpam('buy VIAgRA now')
+true
+checkSpam('free xxxxx')
+true
+checkSpam('innocent rabbit')
+false
+function random(min, max) {
+  return min + Math.random() * (max - min);
+}
+undefined
+console.log(random(1,5))
+VM1039:1 1.8983926579698789
+undefined
+console.log(random(1,5))
+VM1043:1 1.3553948115498544
+undefined
+console.log(random(1,5))
+VM1047:1 1.4469133380018642
+undefined
+console.log(random(1, 5))
+VM1068:1 2.216276302843144
+undefined
+console.log(random(1, 5))
+VM1072:1 3.743941304869214
+undefined
+console.log(random(1, 5))
+VM1076:1 1.7967924190822897
+undefined
+const palindrome = str => {
+  str = str.toLowerCase()
+  return str === str.split('').reverse().join('')
+}
+undefined
+palindrome('racecar') 
+
+true
+palindrome('table')  
+false
+const fizzBuzz = num => {
+  for(let i = 1; i <= num; i++) {
+    if(i % 3 === 0 && i % 5 === 0) {
+      console.log('fizzbuzz')
+    } 
+      else if(i % 3 === 0) {
+      console.log('fizz')
+    } 
+      else if(i % 5 === 0) {
+      console.log('buzz')
+    } else {
+      console.log(i)
+    }
+  }
+}
+undefined
+fizzBuzz(5)
+VM1310:12 1
+VM1310:12 2
+VM1310:7 fizz
+VM1310:12 4
+VM1310:10 buzz
+undefined
+const findVowels = str => {
+  let count = 0
+  const vowels = ['a', 'e', 'i', 'o', 'u']
+  for(let char of str.toLowerCase()) {
+    if(vowels.includes(char)) {
+      count++
+    }
+  }
+  return count
+}
+undefined
+findVowels('hello')
+
+2
+findVowels('why') 
+0
